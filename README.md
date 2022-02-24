@@ -1,2 +1,2 @@
 # alexandrite
-a card game for rocks and ᚠᛚᚢᛇᛞᛊ
+a game for rocks and ᚠᛚᚢᛇᛞᛊ
