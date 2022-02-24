@@ -1,7 +1,6 @@
 import sys
-
 import pygame
-from config import screen_size, screen_flags
+from config import screen_size, screen_flags, bg_color
 
 pygame.init()
 
@@ -9,6 +8,8 @@ screen = pygame.display.set_mode(screen_size, screen_flags if screen_flags else 
 
 
 def redraw_screen():
+    screen.fill(bg_color)
+
     pygame.display.update()
 
 
