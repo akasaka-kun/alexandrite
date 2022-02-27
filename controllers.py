@@ -1,10 +1,10 @@
+import inspect
 import warnings
 import pygame
 import config
 
 
 class Controller:
-
     instances = None
 
     def __init__(self, controller, controls, instances):
@@ -16,6 +16,7 @@ class Controller:
 
 class Keyboard(Controller):
     instances = []
+
     default_controls = {
         pygame.K_a: 'left',
         pygame.K_d: 'right',
