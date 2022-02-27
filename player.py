@@ -44,7 +44,7 @@ class Player:
             if self.state == Player.STATE_WALK_RIGHT:
                 self.vel = [min(self.vel[0] + self.character.ground_accel / delta_time, +self.character.ground_max_speed), self.vel[1]]
             elif self.state == Player.STATE_WALK_LEFT:
-                self.vel = [max(self.vel[0] - self.character.ground_accel / delta_time, -self.character.ground_max_speed), self.vel[1]]  # todo why is left faster
+                self.vel = [max(self.vel[0] - self.character.ground_accel / delta_time, -self.character.ground_max_speed), self.vel[1]]
             if self.state not in (Player.STATE_WALK_RIGHT, Player.STATE_WALK_LEFT):
                 self.vel = [sign(self.vel[0]) * max(0.0, abs(self.vel[0]) - self.character.ground_decel / delta_time), self.vel[1]]
         else:
